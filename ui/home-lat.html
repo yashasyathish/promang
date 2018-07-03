@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ProMang-Homepage</title>
+	<meta title="ProMang-Homepage"/>
+	<meta charset="UTF-8"/>
+	<base href="">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<link rel="stylesheet" type="text/css" href="/main.css"/>
+	<link rel="stylesheet" type="text/css" href="/feature.css"/>
+	
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+	$("#topnav").load('/nav.html')
+	$("#dropreg").hide();
+	});
+    
+	
+	$("#register").hover(function(){
+    $("#dropreg").css("display", "block");
+    });
+	
+	$("#login").hover(function(){
+    $("#droplog").show();
+    });
+/*function reghover(){
+var c=document.getElementById("dro");
+c.style.visibility="visible";
+r.style.visibility="visible";
+}
+function regout(){
+var c=document.getElementById("comreg");
+var r=document.getElementById("regclient");
+c.style.visibility="hidden";
+r.style.visibility="hidden";
+}*/
+
+
+</script>
+
+</head>
+
+<body>
+<nav class="navbar navbar-fixed-top" id="topnav">
+
+</nav>
+
+<!--
+    <div id="top">
+	<img src="logo2.png" id="logo"/>
+	<p id="tit">ProMang<p>
+	<ul style="list-style-type: none;"><li><div id="register" class="log" onmouseover="reghover()" "><a href="/login">Register</a></div><div id="login" class="log"> <a href="/web%20proj/login.html">Login</a></div></li>
+	<div onmouseover="reghover()" onmouseout="regout()"> <li><div id="comreg" class="log extralog"  ><a href="/web%20proj/companyregister.html">Company Register</a></div></li>
+	<li><div  class="log extralog" id="regclient" ><a href="/web%20proj/clientregister.html">Client Register</a></div></li></div>
+	</ul>
+	</div>
+	
+-->	
+
+<!--
+	<div class="inline" id="feature">
+	<h1>Features</h1>
+		<h2><img src="interact.svg" class="w3-circle"/>
+		<span class="a1"><span id="anim11">Easy Interaction</span> <span id="anim21">between Client and Project Head </span> </h2></span> 
+		<h2><img src="review.svg"></img>
+		<span class="a1"><span id="anim12">Review project plans</span> <span id="anim22">and make suggestions instantly</span> </h2></span> 
+		<h2><img src="update.svg"></img>
+		<span class="a1"><span id="anim13">Instant updates about changes</span> <span id="anim23">in project plans and status</span> </h2></span> 
+		<h2><img src="attach.svg"></img>
+		<span class="a1"><span id="anim14">You can attach bill invoices</span> <span id="anim24">and other media files </span> </h2></span> 
+		<h2><img src="chat.svg"></img>
+		<span class="a1">Live chat between Client and Project Head</h2>
+		
+	</div>
+-->
+
+<div class="mid">
+<div class="container text-center">
+          <div class="row">
+            <div class="service-heading-block">
+                <h2 class="text-center text-primary title">Our Exclusive Service </h2>
+            </div>             
+              
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="text-center feature-block">
+                <span class="fb-icon color-info">
+                  <i class="fa fa-wechat" ></i>
+                </span>
+                <h4 class="color-info">Faster Communication</h4>
+                <p class="">Easy Interaction between Client and Project Head. Live Chat facility is available.</p>
+                <a href="javascript:void(0)" class="btn btn-info btn-custom">Read More</a>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 col-sm-6">
+             <div class="text-center feature-block">
+                <span class="fb-icon color-warning">
+                  <i class="fa fa-line-chart" aria-hidden="true"></i>
+                </span>
+                <h4 class="color-warning">Visulize your project</h4>
+                <p class="">Visualizing the project plan using graphs</p>
+                <a href="javascript:void(0)" class="btn btn-warning btn-custom">Read More</a>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="text-center feature-block">
+                <span class="fb-icon color-success">
+                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </span>
+                <h4 class="color-success">Instant Updates</h4>
+                <p class="">Instant updates about changes in project plans and status</p>
+                <a href="javascript:void(0)" class="btn btn-success btn-custom">Read More</a>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="text-center feature-block">
+                <span class="fb-icon color-danger">
+                  <i class="fa fa-upload" aria-hidden="true"></i>
+                </span>
+                <h4 class="color-danger">Attach Proofs</h4>
+                <p class="">You can attach bill invoices and other media files</p>
+                <a href="javascript:void(0)" class="btn btn-danger btn-custom">Read More</a>
+              </div>
+            </div>
+          </div>  
+		  
+         <!--   <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="text-center feature-block">
+                <span class="fb-icon color-danger">
+                  <i class="fa fa-fire" aria-hidden="true"></i>
+                </span>
+                <h4 class="color-danger">Chat service</h4>
+                <p class="">Live chat between Client and Project Head</p>
+                <a href="javascript:void(0)" class="btn btn-danger btn-custom">Click here</a>
+              </div>
+            </div>
+          </div>  -->
+ </div>
+	
+	
+	<div class="inline"   id="our-clients" >
+	<h1>Our Clients</h1>
+	<a href="/client1" target="_blank"><img class="img-feature" title="client1" src="/client1.png"/></a><br>
+	<a href="/client2" target="_blank"><img class="img-feature" title="client2" src="/client2.png"/></a><br>
+	<a href="/client3" target="_blank"><img class="img-feature" title="client3" src="/client3.png"/></a><br>
+	<a href="/client4" target="_blank"><img class="img-feature" title="client4" src="/client4.png"/></a><br>
+	</div>
+
+
+</div>
+	
+<div id="bottom">
+	<div id="infobottom">
+	<ul style="list-style-type: none;">
+	<li><h3 style="">RESOURCES</h3></li>
+	<li><a href="#">Support</a></li>
+	<li><a href="#">Discussions</a></li>
+	<li><a href="#">Blogs</a></li>
+	
+	
+	<li><h3>ABOUT</h3></li>
+	<li><a href="#">About ProMang</a></li>
+	<li><a href="#">Events</a></li>
+	<li><a href="#">Press</a></li>
+	<li><a href="#">ProMang in the News</a></li>
+	<li><h3>CONTACT</h3></li>
+	<li><span>Narendren and Yashas</span><li>
+	<li><span>Vellore</span></li>
+	
+	</ul>
+	
+	</div>
+	<div style="position:relative; top:45%; left:10px; bottom: 2px; ">&copy 2017, ProMang. All Rights Reserved.</div>
+
+</div>
+	
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ProMang Project Details</title>
+	<meta title="ProMang-Homepage"/>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/web-nodejs-part/ui/project-plan-page.css"/>
+	<link rel="stylesheet" type="text/css" href="/web-nodejs-part/ui/signup.css"/>
+	<link rel="stylesheet" type="text/css" href="/web-nodejs-part/ui/main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans|Encode+Sans+Condensed" rel="stylesheet">
+
+<script>
+function valid()
+{
+var fn=document.getElementById("FirstName").value;
+var ln=document.getElementById("LastName").value;
+var cn=document.getElementById("CompanyName").value;
+var em=document.getElementById("Email").value;
+var mob=document.getElementById("MobileNo").value;
+var patt = /^[A-Za-z][A-Za-z]*[A-Za-z]$/i;
+var chfn=patt.test(fn);
+var chln=patt.test(ln);
+var chcn=patt.test(cn);
+//var patt1= /^[A-Za-z][\.\_\w]*@\w[\.\w]{0,2}?[A-Za-z]+$/i;
+var patt1= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var chem=patt1.test(em);
+var patt2=/^[7-9][0-9]+$/;
+var chmob=patt2.test(mob);
+window.alert(chfn);
+if(fn.length<2 || chfn==0)
+{
+window.alert("hi bro");
+window.alert("Invalid First Name");
+}
+if(ln.length<2 || chln==0)
+{
+window.alert("Invalid Last Name");
+}
+if(chem==0)
+{
+window.alert("Invalid Email Address");
+}
+if(mob.length!=0){
+if(mob.length<10 || chmob==0)
+{
+window.alert("Invalid Mobile No");
+}
+}
+self.location="project-plan-page.php";
+}
+</script>
+</head>
+<body>
+	<div id="top">
+	Project Details
+	</div>
+	<div id="c-details">
+	<fieldset id="c-det-fset">
+		<legend><h3><i>Customer Details</i></h3></legend>
+		<center>
+	<form id="form1" action="/web%20proj/project-plan-page.php" method="post" onsubmit="valid()">
+		<table class="form table" id="table-c-details">
+		<tr class="r1">
+			<td>First Name<sup>*</sup></td>
+			<td><input type="text" id="FirstName"  name="FirstName" maxlength="30" required /></td>
+		</tr>
+		<tr class="r1">
+			<td>Last Name<sup>*</sup></td>
+			<td><input type="text" id="LastName"  name="LastName" maxlength="30" required /></td>
+		</tr>
+		<tr class="r1">
+			<td>Company Name<sup>*</sup></td>
+			<td><input type="text" id="CompanyName" name="CompanyName" maxlength="30" required /></td>
+		</tr>
+		<tr class="r1">
+			<td>Official Email Address<sup>*</sup></td>
+			<td><input type="email" id="Email" name="Email" required /></td>
+		</tr>
+		<tr class="r1">
+			<td>Mobile Number</td>
+			<td style="text-align:left"><input type="text" id="MobileNo" name="MobileNo" minlength="10" maxlength="10"  /></td>
+		</tr>
+		<tr class="r1">
+			<td>Country<sup>*</sup></td>
+			<td style="text-align:left"><select id="country" name="country" required>
+			<option>India</option>
+			<option>USA</option>
+			<option>China</option>
+			<option>Germany</option>
+			</select></td>
+		</tr>
+		</table>
+	</fieldset>
+	</center>
+	<fieldset id="project-det-fset">
+		<legend><h3><i>Project Details</i></h3></legend>
+		<center>
+		<table class="form-table" id="table-proj-details">
+		<tr class="r1">
+			<td>Project Name</td>
+			<td><input type="text" id="projName" name="projName" maxlength="30" required /></td>
+		</tr>
+		<tr class="r1">
+			<td>Quantity</td>
+			<td><input type="number" id="qty" name="qty" min="1" max="20" required /></td>
+		</tr>
+		<tr class="r1">
+			<td>Project Duration</td>
+			<td>From: <input type="date" id="projDur" name="projDur1" required /></td>
+			<td>To: <input type="date" id="projDur" id="projDur2" required /></td>
+		</tr>
+		<tr class="r1">
+			<td>Project Description</td>
+			<td><textarea width="300" height="100" name="projdesc" required></textarea></td>
+		</tr>
+		</table>
+		<center><input type="submit" value="Submit"> &nbsp &nbsp &nbsp <input type="reset" value="Reset"></center>
+		</center>
+	</fieldset>
+	</form>
+	<p id="p1"> </p>
+	</div>
+</body>
+</html>

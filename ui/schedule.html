@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript" src="/schedule.js"></script>
+</head>
+<body>
+<button class="new-button profile" id="new-button" onclick="javascript:newschedule()"><b/>New Task</button>
+<button class="new-button profile" id="del-button" onclick="javascript:deleteschedule()"><b/>Delete Task</button>
+
+<form name="formschedule" onsubmit="javascript:createtimelie()"> <!--/schedulesave-->
+<table id="tabsched">
+<div class="schedule" id="sched1">
+
+<tr><td>Tasks: <input id="task1" type="text" required /><td></tr>
+<tr><td>Days  <input id="days1" type="number" maxlength="5" required /></td></tr>	
+<tr><td>Start  <input id="start1" type="date" required /></td></tr>
+<tr><td>End <input id="end1" type="date" required /></td></tr>	
+<tr><td>Description <input id="desc1" type="textarea" required /></td></tr>
+	
+</div>
+</table>
+<tr><td><input type="submit"/></td></tr>
+<!--<button onclick="javascript:createtimelie()"><input type="submit"/></button>-->
+</form>
+</body>
+</html> 

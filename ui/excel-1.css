@@ -1,0 +1,76 @@
+html{
+  height:100%
+}
+body{
+  height:100%;
+}
+.intro{
+  height:100%
+}
+
+.left{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  background-color:#3d231b;
+  height : 100%;
+  color : #FFF;
+
+}
+.right{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  background-color:#FFF;
+  height : 100%;
+  color : #3d231b;
+}
+@media (max-width: 1200px) { 
+  .left{
+    height:50%
+  }
+  .right{
+    height:50%
+  }
+}
+.about{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  background-color:#000;
+  color : #FFF;
+  height:100%
+}
+ .abc{
+	 font-weight:strong
+	 background : #fff;
+	 box-shadow:1px 1px 10px rgba(0,0,0,0.3);
+	 
+ }
+ 
+ #sched1 div{
+	 border: 2px solid black;
+	 padding-bottom:5px;
+	 padding-top:5px;
+	 padding-right:5px;
+	 padding-left:5px;
+	 border-bottom: 1px solid black;
+ }
+ 
+ #tabsched{
+	border: 5px solid skyblue;
+	background: -webkit-linear-gradient(to top left, #66ffff 0%, #ffffcc 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top left, #66ffff 0%, #ffffcc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding: 5px;
+ }
+ 
+ #tabsched td{
+	 padding:10px;
+ }
+ 
+ #abcdetime {
+	 border: 5px solid skyblue;
+	 border-radius: 50px 50px 50px;
+	background: -webkit-linear-gradient(to top left, #66ffff 0%, #ffffcc 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top left, #ffffcc 0%, #66ffff 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
